@@ -42,5 +42,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-MycoTechnology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/mycotechnology_stock/
+MycoTechnology, Inc. is a Colorado-based food ingredient technology company that uses mushroom
+mycelial fermentation to create naturally derived ingredients for the food and beverage industry.
+Operating publicly as Myco, it develops and manufactures flavor-modulation and sweetening
+ingredients — ClearIQ natural flavor, ClearHT natural flavor, and Zukora honey truffle sweet
+protein — used for bitterness masking, off-note mitigation, sugar reduction, and clean-label
+formulation. It also offers Fermentation as a Service (FaaS) and the MyCulinary culinary science
+program.
+
+- Website: https://www.mycoiq.com/
+- Secondary-market listing: https://forgeglobal.com/mycotechnology_stock/
+
+## API surface
+
+**None found.** MycoTechnology is an ingredient manufacturer, not a software company. Contract
+discovery on 2026-08-04 probed the marketing host for `/openapi.json`, `/swagger.json`,
+`/api-docs`, `/llms.txt`, `/developers`, `/api`, `/docs` and the full `/.well-known/` discovery
+set (`security.txt`, `agent-card.json`, `agent.json`, `api-catalog`, `openid-configuration`,
+`ai-plugin.json`) — every path returned 404. The `api.`, `developer.`, `docs.`, `app.`, `status.`
+and `trust.` subdomains have no DNS records. See `x-coverage` in `apis.yml`.

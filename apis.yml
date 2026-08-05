@@ -1,7 +1,15 @@
 aid: mycotechnology
 name: MycoTechnology
-description: 'MycoTechnology is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'MycoTechnology, Inc. is a Colorado-based food ingredient technology company
+  that uses mushroom mycelial fermentation to create naturally derived ingredients for
+  the food and beverage industry. Operating publicly as Myco (mycoiq.com), the company
+  develops and manufactures flavor-modulation and sweetening ingredients — ClearIQ natural
+  flavor, ClearHT natural flavor, and Zukora honey truffle sweet protein — used for bitterness
+  masking, off-note mitigation, sugar reduction, and clean-label formulation in plant proteins,
+  meat analogues, dairy alternatives, and health and wellness products. It also offers
+  Fermentation as a Service (FaaS) and a MyCulinary culinary science program for food brands.
+  This is an ingredient manufacturing and food science business, not a software or API company:
+  it publishes no developer portal, no API documentation, and no machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/mycotechnology/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +20,14 @@ created: '2026-08-04'
 modified: '2026-08-04'
 tags:
 - Company
+- Food
+- Ingredients
+- Fermentation
+- Biotechnology
+- Food Science
+- Manufacturing
+- Agriculture
+image: https://www.mycoiq.com/wp-content/uploads/2023/06/Mycotech-logo-header_203x71.svg
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mycotechnology-domain-security.yml
 - type: Website
+  url: https://www.mycoiq.com/
+- type: About
+  url: https://www.mycoiq.com/about-us/
+- type: Blog
+  url: https://www.mycoiq.com/newsroom/
+- type: Support
+  url: https://www.mycoiq.com/contact-us/
+- type: TermsOfService
+  url: https://www.mycoiq.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.mycoiq.com/privacy-policy/
+- type: Products
+  url: https://www.mycoiq.com/ingredients/
+- type: Resources
+  url: https://www.mycoiq.com/resources/
+- type: Careers
+  url: https://www.mycoiq.com/careers/
+- type: Patents
+  url: https://www.mycoiq.com/patents/
+- type: Profile
+  name: Forge Global secondary-market listing
   url: https://forgeglobal.com/mycotechnology_stock/
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: MycoTechnology sells mushroom-mycelium fermented food ingredients (ClearIQ,
+    ClearHT, Zukora honey truffle sweet protein) to food manufacturers; its only web
+    property is the WordPress marketing site at www.mycoiq.com, which has no developer
+    section, and api./developer./docs./app.mycoiq.com resolve to no DNS records at all.
+  evidence:
+  - url: https://www.mycoiq.com/openapi.json
+    status: 404
+  - url: https://www.mycoiq.com/llms.txt
+    status: 404
+  - url: https://www.mycoiq.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.mycoiq.com/developers
+    status: 404
+  - url: https://forgeglobal.com/mycotechnology_stock/
+    status: 403
+  checked: '2026-08-04'
